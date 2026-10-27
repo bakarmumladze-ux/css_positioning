@@ -1,0 +1,80 @@
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+div.wrapper {
+  position: relative;
+}
+
+a {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  font-size: x-large;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: #107ad7e7;
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 0 30px #107ad7,
+    0 0 30px #107ad7;
+}
+
+.hotspot-monitor {
+  top: 28%;
+  right: 33%;
+  transform: translate(-20%, -20%);
+}
+
+.hotspot-headphones {
+  bottom: 30%;
+  right: 25%;
+  transform: translate(105%, -30%);
+}
+.hotspot-plant {
+  bottom: 30%;
+  left: 35%;
+  transform: translate(105%, -60%);
+}
+.hotspot-notebook {
+  bottom: 25%;
+  right: 40%;
+  transform: translate(150%, 0%);
+}
+.hotspot-plant {
+  bottom: 20%;
+  left: 25%;
+  transform: translate(85%, -20%);
+}
+.hotspot-keyboard {
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+
+.hotspot-mouse {
+  bottom: 20%;
+  right: 35%;
+  transform: translate(80%, 50%);
+}
+
+.tooltip {
+  bottom: 125%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.hotspot:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+span{}
