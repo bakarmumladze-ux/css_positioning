@@ -8,6 +8,8 @@ div.wrapper {
   position: relative;
 }
 
+/*დივი იმიტომ არის რელატივი რომ მისი ზომებით მის ფარგლებში გიაცენტროს ეს ეი ტეგი*/
+
 a {
   position: absolute;
   display: flex;
@@ -106,4 +108,23 @@ a {
   opacity: 1;
   visibility: visible;
   transition: all 0.3s ease;
+  z-index: 10;
+}
+
+
+.help-widget{
+  color: white;
+  background-color: #107ad7;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  position: fixed;
+  bottom: 60px;
+  right: 300px;
+
 }
