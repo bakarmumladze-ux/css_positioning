@@ -28,53 +28,82 @@ a {
     0 0 30px #107ad7;
 }
 
-.hotspot-monitor {
+.monitor {
   top: 28%;
   right: 33%;
   transform: translate(-20%, -20%);
 }
 
-.hotspot-headphones {
+.headphones {
   bottom: 30%;
   right: 25%;
   transform: translate(105%, -30%);
 }
-.hotspot-plant {
+.plant {
   bottom: 30%;
   left: 35%;
   transform: translate(105%, -60%);
 }
-.hotspot-notebook {
+.notebook {
   bottom: 25%;
   right: 40%;
   transform: translate(150%, 0%);
 }
-.hotspot-plant {
+.cup {
   bottom: 20%;
   left: 25%;
   transform: translate(85%, -20%);
 }
-.hotspot-keyboard {
+.keyboard {
   bottom: 20%;
   left: 50%;
   transform: translate(-50%, 20%);
 }
 
-.hotspot-mouse {
+.mouse {
   bottom: 20%;
   right: 35%;
   transform: translate(80%, 50%);
 }
 
 .tooltip {
-  bottom: 125%;
-  left: 50%;
-  transform: translateY(-50%);
+  position: absolute;
+  z-index: 10;
+  width: 250px;
+  bottom: 190%;
+  color: white;
+  transform: translatex(0%);
+  text-align: left;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.74);
+  backdrop-filter: blur(50%);
+  border-radius: 10px;
+  opacity: 0; visibility: hidden;
+
+  h3{
+    font-size: large;
+  }
+  p.pirveli{
+    font-size: large;
+    margin-top: 5px;
+  }
+  p.meore{
+    font-size: medium;
+    margin-top: 10px; 
+  }
+  span{
+    margin-top: 10px;
+    font-size: medium;
+    color: #107ad7;
+     -webkit-text-stroke: 0.2px #107ad7;
+  }
+  
+  /* opacity: 0; visibility: hidden; */
 }
+
 
 .hotspot:hover .tooltip {
   opacity: 1;
   visibility: visible;
+  transition: all 0.3s ease;
 }
-
-span{}
